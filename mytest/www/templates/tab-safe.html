@@ -1,0 +1,22 @@
+<ion-view view-title="安全保障">
+  <ion-content class="padding">
+  	<style>
+  		.padding{
+  			background: whitesmoke;
+  			padding: 20px 0;
+  		}
+  		.prompt{
+  			background: white;
+  			padding: 20px 20px;
+  			font-family: '宋体';
+  		}
+  		.prompt p{
+  			color: #666;
+  		}
+  	</style>
+    <div class="prompt" ng-repeat="pro in prompt">
+    	<h4 style="color: #fc6e26;">{{pro.title}}</h4>
+    	<p>{{pro.text}}</p>
+    </div>
+  </ion-content>
+</ion-view>

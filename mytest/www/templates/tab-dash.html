@@ -1,0 +1,40 @@
+<ion-view view-title="推荐" hide-nav-bar="true">
+  <ion-content>
+  	<!--搜索栏-->
+     <div class="item item-input-inset">
+    	<img src="img/mike.png" alt="" class="log" ng-click="toggleLeftSideMenu()" />
+    	<label class="item-input-wrapper">
+    		<input type="text" placeholder="Search" />
+    	</label>
+    	<button class="button button-small icon ion-search"></button>
+    </div>
+    <!--轮播图-->
+    <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true">
+		  <ion-slide ng-repeat="pic in pics">
+		    <div class="box">
+		    	<img src="img/{{pic.src}}"/>
+		    </div>
+		  </ion-slide>
+	</ion-slide-box>
+	<div class="box padding">
+		<div class="news">新手专享</div>
+		<h4 class="income">预期年化收益</h4>
+		<div class="row">
+			<div class="col col-50">
+				<ul class="left">
+					<li>0元起投</li>
+					<li>超高收益</li>
+				</ul>
+			</div>
+			<div class="col col-50">
+				<ul class="right">
+					<li>期限30天</li>
+					<li>安心兑付</li>
+				</ul>
+			</div>
+		</div>
+		<button class="button button-block button-assertive" style="background: #fc6e26;">立即抢购</button>
+		<div class="footer">提供专业资金保障</div>
+	</div>
+  </ion-content>
+</ion-view>
